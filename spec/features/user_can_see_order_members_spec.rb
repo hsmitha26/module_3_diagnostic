@@ -18,11 +18,3 @@ describe "As a user, when I visit '/'; select 'Gryffindor' from select field & '
     end
   end
 end
-
-# Then I should see a list of 18 members
-#
-# And for each of the members I should see:
-# - The name of the member
-# - The members role (if it exists)
-# - The house the member belongs to
-# - The Patronus of the member (if it exists)
