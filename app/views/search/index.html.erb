@@ -1,0 +1,14 @@
+<h1>Order of the Phoenix Members by House</h1>
+<p><%= @response.count %> for <%= @house %></p>
+<section class="members">
+  <% @response.each do |response| %>
+    <p><%= response["name"] %></p>
+    <li> <%= response["house"] %> </li>
+    <% if response["role"] %>
+      <li> <%= response["role"] %> </li>
+    <% end %>
+    <% if response["patronus"] %>
+      <li> <%= response["patronus"] %> </li>
+    <% end %>
+  <% end %>
+</section>
