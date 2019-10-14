@@ -9,12 +9,5 @@ describe "As a user, when I visit '/'; select 'Gryffindor' from select field & '
     expect(current_path).to eq('/search')
 
     expect(page).to have_content("21 for Gryffindor")
-
-    within(first(".members")) do
-      expect(page).to have_content("")
-      expect(page).to have_content("")
-      expect(page).to have_content("")
-      expect(page).to have_content("")
-    end
   end
 end
