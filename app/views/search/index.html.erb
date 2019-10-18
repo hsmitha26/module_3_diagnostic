@@ -1,0 +1,12 @@
+<h1>Order of the Phoenix Members</h1>
+
+<h2><%= @house.members.count %> for <%= @house.name %></h2>
+
+<% @house.members.each do |member| %>
+<ul>
+  <li><%= member.name %></li>
+  <li><%= member.role %></li>
+  <li><%= member.house %></li>
+  <li><%= member.patronus %></li>
+</ul>
+<% end %>
